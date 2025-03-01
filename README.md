@@ -53,7 +53,7 @@ Make sure /boot/firmware/config.txt is identical to included config.txt file
 
 Place Scripts folder in /home/pi/
 
-Place service files in /etc/system/system/
+Place service files in /etc/systemd/system/
 
 In SSH Terminal:
 
