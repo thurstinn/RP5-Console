@@ -13,6 +13,8 @@ Keep battery installed but disconnected until prompted
 
 With the back casing removed and the battery disconnected, place console face down on a soft surface
 
+Set manual power switch to on position
+
 ATSAMD21E18A and ATMEGA32U4 ICs need USB bootloaders. ATMEGAs Leonardo bootloader can be acquired and flashed using an Arduino Nano in Arduino IDE. ATSAMD21s Adafruit Trinket M0 bootloader can be flashed using a J-Link EDU mini in Microchip Studio. There are online resources for help with this. You will need to make wire breakouts from the associated connectors for each device
 
 Connect the battery
@@ -33,7 +35,11 @@ Follow the instructions in the Ardupad script to calibrate the joysticks
 
 Follow the instructions in the README in the EDID folder
 
+Set manual power switch to off postition
+
 Follow the truth table on the Main Board/USB schematic to boot CM5 in rpiboot mode: (Switch 1-4 = low, low, high, low)
+
+Set manual power switch to on position
 
 On PC, install and run Raspberry Pi Imager: https://www.raspberrypi.com/software/
 
@@ -41,11 +47,11 @@ On PC, follow the instructions to install and run rpiboot for CM5 at: https://ww
 
 Follow the instructions to install retropie on PI5 OS Lite at: https://github.com/danielfreer/raspberrypi5-retropie-setup (Choose SSD if installed or EMMC as storage unless you have CM5 Lite version and want to use SD card)
 
-Remove power supply and disconnect battery
+Set manual power switch to off postition
 
 Follow the truth table on the Main Board/USB schematic for normal operation: (Switch 1-4 = low, low, low, high)
 
-Reconnect battery and connect power supply
+Set manual power switch to on postition
 
 Use WinSCP or SSH Terminal to:
 
