@@ -69,6 +69,6 @@ chmod 777 /var/log/fan.log
 
 chmod 777 /var/log/fan.rpm
 
-To turn on the console, press and hold the power button for 5 seconds. The power led will turn on (red) and then switch to the activity led (now solid green) 
-To turn off, press and hold the power button for 5 seconds
+To turn on the console, press and hold the power button for 5 seconds. The power led will turn on (red) and then switch to the activity led (now solid green). To turn off, press and hold the power button for 5 seconds
+
 If you shutdown via the menu or terminal, press the power button once after the shutdown process has finished
