@@ -31,6 +31,8 @@ Use Arduino IDE to flash the included scripts for each device. For ATSAMD21, dou
 
 Follow the instructions in the Ardupad script to calibrate the joysticks
 
+Follow the instructions in the README in the EDID folder
+
 Follow the truth table on the Main Board/USB schematic to boot CM5 in rpiboot mode: (Switch 1-4 = low, low, high, low)
 
 On PC, install and run Raspberry Pi Imager: https://www.raspberrypi.com/software/
