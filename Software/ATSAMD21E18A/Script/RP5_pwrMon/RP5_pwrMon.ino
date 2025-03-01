@@ -133,7 +133,7 @@ void loop() {
     initiateShutdown();               
   }
   // If shutdown through menu or ssh terminal, press power button to turn off system
-  else if (digitalRead(piOn) == HIGH && digitalRead(pwrBtn) == LOW) {
+  else if (!awaitingShutdown && digitalRead(piOn) == HIGH && digitalRead(pwrBtn) == LOW) {
     completeShutdown();
   }
   //readBatVoltage();
