@@ -3,6 +3,7 @@
 The above image of the boards differs slightly from the included board files and the bodges you see were from minor mistakes on first build. Those have been corrected for this repository.
 
 The process of building this console and setting it up can be complex, expensive, and time consuming. Not for the faint of heart.
+
 BOM coming soon..
 
 # Setup
