@@ -1,5 +1,12 @@
 # RP5-Console
-
+![20250217_181708](https://github.com/user-attachments/assets/bb11127e-8a09-4bc5-866f-330abdede5b4)
+![20250220_175925](https://github.com/user-attachments/assets/74970137-21f9-4dec-ac34-e7d4264b4763)
+![20250221_055637](https://github.com/user-attachments/assets/17e3d2fc-bc0d-46cf-8d3f-710262dd478a)
+![20250221_060310](https://github.com/user-attachments/assets/b28b8ec1-e9c4-479c-8aaf-4ef1404c62e9)
+![20250220_180016](https://github.com/user-attachments/assets/d9fcb935-722a-42e8-9214-ad88465778b3)
+![20250220_180003](https://github.com/user-attachments/assets/f41678a5-d000-4839-a484-7cb65c2e1dbb)
+![RP5 _ Assembly1](https://github.com/user-attachments/assets/34a4e818-2b05-4846-8007-b0b71aa49648)
+![RP5 _ Assembly2](https://github.com/user-attachments/assets/baed8283-d7a0-4850-bc22-539dbef000c4)
 
 
 The process of building this console and setting it up can be complex, expensive, and time consuming. Not for the faint of heart.
