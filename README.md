@@ -13,7 +13,7 @@ Keep battery installed but disconnected until prompted
 
 With the back casing removed and the battery disconnected, place console face down on a soft surface
 
-ATSAMD21E18A and ATMEGA32U4 ICs need USB bootloaders. ATMEGAs Leonardo bootloader can acquired and flashed using an Arduino Nano in Arduino IDE. ATSAMD21s Adafruit Trinket MO bootloader can be flashed using a J-Link EDU mini in Microchip Studio. There are online resources for help with this. You will need to make wire breakouts from the associated connectors for each device
+ATSAMD21E18A and ATMEGA32U4 ICs need USB bootloaders. ATMEGAs Leonardo bootloader can acquired and flashed using an Arduino Nano in Arduino IDE. ATSAMD21s Adafruit Trinket M0 bootloader can be flashed using a J-Link EDU mini in Microchip Studio. There are online resources for help with this. You will need to make wire breakouts from the associated connectors for each device
 
 Connect the battery
 
@@ -27,7 +27,7 @@ Connect a Micro-USB cable from the slave port (right Micro-USB port with console
 
 Follow the truth table on the Main Board/USB schematic for ATSAMD21 (Switch 1-4 = low, high, low, high) and ATMEGA (Switch 1-4 = high, low, low, high) (low = switch down position and vice versa)
 
-Use Arduino IDE to flash the included scripts for each device. For ATSAMD21, install and select Adafruit Trinket MO and double-click reset button to show up as COM Port. For ATMEGA, select Arduino Leonardo and hit the reset button once flashing begins
+Use Arduino IDE to flash the included scripts for each device. For ATSAMD21, install and select Adafruit Trinket M0 and double-click reset button to show up as COM Port. For ATMEGA, select Arduino Leonardo and hit the reset button once flashing begins
 
 Follow the instructions in the Ardupad script to calibrate the joysticks
 
