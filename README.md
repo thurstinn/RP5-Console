@@ -51,7 +51,7 @@ Set manual power switch to off postition
 
 Follow the truth table on the Main Board/USB schematic for normal operation: (Switch 1-4 = low, low, low, high)
 
-Set manual power switch to on postition
+Set manual power switch to on postition and keep it there
 
 Use WinSCP or SSH Terminal to:
 
