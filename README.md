@@ -39,11 +39,15 @@ On PC, follow the instructions to install and run rpiboot for CM5 at: https://ww
 
 Follow the instructions to install retropie on PI5 OS Lite at: https://github.com/danielfreer/raspberrypi5-retropie-setup (Choose SSD if installed or EMMC as storage unless you have CM5 Lite version and want to use SD card)
 
+Remove power supply and disconnect battery
+
 Follow the truth table on the Main Board/USB schematic for normal operation: (Switch 1-4 = low, low, low, high)
 
-Hold power button for 5 seconds to turn on the console.
+Reconnect battery and connect power supply
 
 Use WinSCP or SSH Terminal to:
+
+Make sure /boot/firmware/config.txt is identical to included config.txt file
 
 Place Scripts folder in /home/pi/
 
