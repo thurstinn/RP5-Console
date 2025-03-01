@@ -1,6 +1,6 @@
 /*
   Created by - LSteen
-  Complete project details at https://github.com/thurstinn/RP5
+  Complete project details at https://github.com/thurstinn/RP5-Console
   
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files.
