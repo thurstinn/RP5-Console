@@ -1,6 +1,10 @@
 # RP5-Console
 
+
+
 The process of building this console and setting it up can be complex, expensive, and time consuming. Not for the faint of heart.
+
+# Setup
 
 Keep battery installed but disconnected until prompted
 
