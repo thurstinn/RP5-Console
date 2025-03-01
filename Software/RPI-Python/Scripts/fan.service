@@ -1,0 +1,14 @@
+[Unit]
+Description=PWM Fan Control
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/Scripts/fan.py
+WorkingDirectory=/home/pi/Scripts
+StandardOutput=journal
+StandardError=journal
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,14 @@
+[Unit]
+Description=Backlight Dimming
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/Scripts/backLight.py
+WorkingDirectory=/home/pi/
+StandardOutput=journal
+StandardError=journal
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
