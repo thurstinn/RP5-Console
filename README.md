@@ -3,7 +3,7 @@
 The process of building this console and setting it up can be complex, expensive, and time consuming. Not for the faint of heart.
 
 Keep battery installed but disconnected until prompted
-With the back casing removed and the battery disconnected, place console face down on a soft surface
+with the back casing removed and the battery disconnected, place console face down on a soft surface
 
 ATSAMD21E18A and ATMEGA32U4 ICs need USB bootloaders. ATMEGAs Leonardo bootloader can acquired and burned using an Arduino Nano in Arduino IDE
 ATSAMD21s Adafruit Trinket MO bootloader can be burned using a J-Link EDU mini in Microchip Studio
