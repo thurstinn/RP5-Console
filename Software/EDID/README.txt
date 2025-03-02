@@ -1,13 +1,13 @@
 Program EDID using Arduino Uno or Nano boards:
 
-GND EDID connector pin 1 pin to Arduino GND
+GND EDID connector pin 1 to Arduino GND
 5V EDID connector pin 2 to Arduino 5V
 SDA EDID connector pin 3 to Arduino SDA A4
 SCL EDID connector pin 4 to Arduino SCL A5 
  
 
 
-1. Program Arduino Uno or Nano board with EDID.ino
+1. Flash Arduino Uno or Nano board with EDID.ino
 3. Unplug Arduino board USB from PC
 3. Connect above Arduino board pins to EDID connector on RP5 PCB
 4. Move EDID switch to EDID Flash position (down position on attached PCB)
