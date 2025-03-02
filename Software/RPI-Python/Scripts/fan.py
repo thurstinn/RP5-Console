@@ -1,3 +1,6 @@
+#This is pulled from https://github.com/cnaslain/pwm_simple_GPIO_6-13
+#All credit for this code goes to cnaslain and the developer of the orginal code it was based on (Artain)
+
 import os
 import threading
 from threading import Thread
