@@ -1,6 +1,6 @@
 /*
   Created by - LSteen
-  Complete project details at https://github.com/thurstinn/RP5-Console
+  Complete project details at https://github.com/thurstinn/RP5
   
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files.
@@ -50,18 +50,29 @@ void setup() {
   
   rtc.begin();                       
   rtc.setAlarmSeconds(20);           
-  rtc.enableAlarm(rtc.MATCH_SS);     
+  rtc.enableAlarm(rtc.MATCH_SS);
+  Serial.println(readBatVoltage());
+  delay(1000);
+  Serial.println(readBatVoltage()); 
 }
 
 //setup adc 
 float readBatVoltage() {
   analogReadResolution(12);
-  adcRead = analogRead(batV);
-  batVoltage = (float)adcRead * (3.3 / 4096) * 2;
-  Serial.println(batVoltage);
+  const int numSamples = 20;
+  int adcSum = 0;
+
+  for (int i = 0; i < numSamples; i++) {
+    adcSum += analogRead(batV);
+    delay(5); // Small delay to allow ADC to settle
+  }
+
+  float adcAvg = adcSum / (float)numSamples;
+  float batVoltage = adcAvg * (3.3 / 4096) * 2;
+
   return batVoltage;
-  
 }
+
 
 void initiateShutdown() {
   digitalWrite(piPwr, LOW);           
@@ -73,10 +84,10 @@ void initiateShutdown() {
 
 void completeShutdown() {
   delay(shutdownDelay);               
-  digitalWrite(enPin, HIGH);          
-  pwrOn = false;                      
+  digitalWrite(enPin, HIGH);                                
   awaitingShutdown = false;
-  Serial.println("Powered off");           
+  Serial.println("Powered off");
+  pwrOn = false;           
 }
 
 void powerOnSystem() {
@@ -132,12 +143,6 @@ void loop() {
     Serial.println("Battery low, powering off");
     initiateShutdown();               
   }
-  // If shutdown through menu or ssh terminal, press power button to turn off system
-  else if (!awaitingShutdown && digitalRead(piOn) == HIGH && digitalRead(pwrBtn) == LOW) {
-    completeShutdown();
-  }
-  //readBatVoltage();
-
   // Put microcontroller to sleep after each loop
   if (!pwrOn) {
     enterSleepMode();                   
