@@ -27,7 +27,7 @@ Press the reset buttons on each device
 
 Connect a Micro-USB cable from the slave port (right Micro-USB port with console face down) to PC
 
-Follow the truth table on the Main Board/USB schematic for ATSAMD21 (Switch 1-4 = low, high, low, high) and ATMEGA (Switch 1-4 = high, low, low, high) (low = switch down position and vice versa)
+Follow the truth table on the Main Board/USB schematic for ATSAMD21 (Switch 1-4 = low, high, low, high) and ATMEGA (Switch 1-4 = high, low, low, high) (low = switch down position and vice-versa)
 
 Use Arduino IDE to flash the included scripts for each device. For ATSAMD21, install and select Adafruit Trinket M0 and double-click reset button to show up as COM Port. For ATMEGA, select Arduino Leonardo and hit the reset button once flashing begins
 
