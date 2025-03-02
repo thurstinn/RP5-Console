@@ -37,7 +37,7 @@ Follow the instructions in the README in the EDID folder
 
 Set manual power switch to off postition
 
-Follow the truth table on the Main Board/USB schematic to boot CM5 in rpiboot mode: (Switch 1-4 = low, low, high, low)
+If using an SSD or EMMC, follow the truth table on the Main Board/USB schematic to boot CM5 in rpiboot mode: (Switch 1-4 = low, low, high, low)
 
 Set manual power switch to on position
 
@@ -45,7 +45,7 @@ On PC, install and run Raspberry Pi Imager: https://www.raspberrypi.com/software
 
 On PC, follow the instructions to install and run rpiboot for CM5 at: https://www.raspberrypi.com/documentation/computers/compute-module.html#set-up-the-host-device
 
-Follow the instructions to install retropie on PI5 OS Lite at: https://github.com/danielfreer/raspberrypi5-retropie-setup (Choose SSD if installed or EMMC as storage unless you have CM5 Lite version and want to use SD card)
+Follow the instructions to install retropie on PI5 OS Lite at: https://github.com/danielfreer/raspberrypi5-retropie-setup (Choose SSD if installed or EMMC as storage unless you have CM5 Lite version. In that case, skip rpiboot and just flash an SD Card)
 
 Set manual power switch to off postition
 
