@@ -1,5 +1,5 @@
 # RP5-Console
-![20250220_175925](https://github.com/user-attachments/assets/acff3b9c-0091-4454-b69b-ee2c6de1da45)
+![20250218_021543](https://github.com/user-attachments/assets/cad879eb-6285-4e7b-8d83-0847d62c0543)
 ![20250217_181708](https://github.com/user-attachments/assets/bb11127e-8a09-4bc5-866f-330abdede5b4)
 The above image of the boards differs slightly from the included board files and the bodges you see were from minor mistakes on first build. Those have been corrected for this repository.
 
