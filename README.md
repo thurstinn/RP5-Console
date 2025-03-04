@@ -84,5 +84,9 @@ sudo chmod 777 /var/log/fan.log
 
 sudo chmod 777 /var/log/fan.rpm
 
+In (sudo raspi-config) and retropie/audio, set the audio output to USB AUDIO CODEC
+
+In the retropie main menu/sound settings (press start button), the audio card should be default and device should be PCM
+
 To turn on the console, press and hold the power button for 5 seconds. The power led will turn on (red) and then switch to the activity led (now solid green). To turn off, press and hold the power button for 5 seconds. This will soft shutdown the OS and then turn off the console.
 If you shutdown the OS via the UI or terminal, you will have to press and hold the power button once the shutdown process has finished to turn off the console.
