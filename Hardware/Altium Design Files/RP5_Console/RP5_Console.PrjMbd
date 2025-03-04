@@ -86,7 +86,7 @@ GenerateClassCluster=0
 DocumentUniqueId=31a55ad3-55c5-4f2c-b048-54923e8c7ada
 
 [Document3]
-DocumentPath=..\RetroPocketCM5\v1-RP5-Main_Board.PrjPcb
+DocumentPath=..\RP5_Main_Board\v1-RP5-Main_Board.PrjPcb
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -155,7 +155,7 @@ VaultURL=https://colorado-technical-university.365.altium.com:443/vault/
 VaultName=Colorado Technical University
 
 [Document6]
-DocumentPath=..\RP5-Right_Flex\RP5-Right_Flex.PrjPcb
+DocumentPath=..\RP5-Right_FPC\RP5-Right_Flex.PrjPcb
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -178,7 +178,7 @@ VaultURL=https://colorado-technical-university.365.altium.com:443/vault/
 VaultName=Colorado Technical University
 
 [Document7]
-DocumentPath=..\RP5-Left_Flex\RP5-Left_Flex.PrjPcb
+DocumentPath=..\RP5-Left_FPC\RP5-Left_Flex.PrjPcb
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -201,7 +201,7 @@ VaultURL=https://colorado-technical-university.365.altium.com:443/vault/
 VaultName=Colorado Technical University
 
 [Document8]
-DocumentPath=..\RP5-Battery_Flex\RP5-Battery_Flex.PrjPcb
+DocumentPath=..\RP5-Battery_FPC\RP5-Battery_Flex.PrjPcb
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
