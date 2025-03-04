@@ -1,12 +1,12 @@
-Record=DiagramHierarchy|SourceDocument=Schematic.MbsDoc|Kind=Multi-board Schematic Module|Designator=1|Source=..\RetroPocketCM5\v1-RP5-Main_Board.PrjPcb
+Record=DiagramHierarchy|SourceDocument=Schematic.MbsDoc|Kind=Multi-board Schematic Module|Designator=1|Source=..\RP5_Main_Board\v1-RP5-Main_Board.PrjPcb
 Record=SubProject|SourceDocument=Schematic.MbsDoc|ProjectPath=..\RetroPocketCM5\v1-RP5-Main_Board.PrjPcb
-Record=DiagramHierarchy|SourceDocument=Schematic.MbsDoc|Kind=Multi-board Schematic Module|Designator=6|Source=..\RP5-Battery_Flex\RP5-Battery_Flex.PrjPcb
+Record=DiagramHierarchy|SourceDocument=Schematic.MbsDoc|Kind=Multi-board Schematic Module|Designator=6|Source=..\RP5-Battery_FPC\RP5-Battery_Flex.PrjPcb
 Record=SubProject|SourceDocument=Schematic.MbsDoc|ProjectPath=..\RP5-Battery_Flex\RP5-Battery_Flex.PrjPcb
 Record=DiagramHierarchy|SourceDocument=Schematic.MbsDoc|Kind=Multi-board Schematic Module|Designator=3|Source=..\RP5-Left_Board\RP5-Left_Board.PrjPcb
 Record=SubProject|SourceDocument=Schematic.MbsDoc|ProjectPath=..\RP5-Left_Board\RP5-Left_Board.PrjPcb
-Record=DiagramHierarchy|SourceDocument=Schematic.MbsDoc|Kind=Multi-board Schematic Module|Designator=5|Source=..\RP5-Left_Flex\RP5-Left_Flex.PrjPcb
+Record=DiagramHierarchy|SourceDocument=Schematic.MbsDoc|Kind=Multi-board Schematic Module|Designator=5|Source=..\RP5-Left_FPC\RP5-Left_Flex.PrjPcb
 Record=SubProject|SourceDocument=Schematic.MbsDoc|ProjectPath=..\RP5-Left_Flex\RP5-Left_Flex.PrjPcb
 Record=DiagramHierarchy|SourceDocument=Schematic.MbsDoc|Kind=Multi-board Schematic Module|Designator=2|Source=..\RP5-Right_Board\RP5-Right_Board.PrjPcb
 Record=SubProject|SourceDocument=Schematic.MbsDoc|ProjectPath=..\RP5-Right_Board\RP5-Right_Board.PrjPcb
-Record=DiagramHierarchy|SourceDocument=Schematic.MbsDoc|Kind=Multi-board Schematic Module|Designator=4|Source=..\RP5-Right_Flex\RP5-Right_Flex.PrjPcb
+Record=DiagramHierarchy|SourceDocument=Schematic.MbsDoc|Kind=Multi-board Schematic Module|Designator=4|Source=..\RP5-Right_FPC\RP5-Right_Flex.PrjPcb
 Record=SubProject|SourceDocument=Schematic.MbsDoc|ProjectPath=..\RP5-Right_Flex\RP5-Right_Flex.PrjPcb
