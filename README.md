@@ -4,9 +4,9 @@
 
 The above image of the boards differs slightly from the included board files and the bodges you see were from minor mistakes on first build. Those have been corrected for this repository.
 
-This project was inspired by StonedEdge's impressive Retro-Lite-CM4 (https://github.com/StonedEdge/Retro-Lite-CM4). I do not use any of their files directly (exception being their project partner's Ardupad.ino (https://github.com/dmcke5/Ardupad), but some of the design choices were influenced by their console.
+This project was inspired by StonedEdge's impressive Retro-Lite-CM4 (https://github.com/StonedEdge/Retro-Lite-CM4). I do not use any of their files directly (exception being their project partner's Ardupad.ino (https://github.com/dmcke5/Ardupad), but some of the design choices were influenced by their console
 
-The process of building this console and setting it up can be complex, expensive, and time consuming. Not for the faint of heart.
+The process of building this console and setting it up can be complex, expensive, and time consuming. Not for the faint of heart
 
 BOM coming soon..
 
@@ -22,7 +22,7 @@ ATSAMD21E18A and ATMEGA32U4 ICs need USB bootloaders. ATMEGAs Leonardo bootloade
 
 Connect the battery
 
-Connect Raspberry Pi 27W USB-C Power Supply (or any USB-C Power Delivery 12V 2A+ capable supply) to USB-C port on the console. 
+Connect Raspberry Pi 27W USB-C Power Supply (or any USB-C Power Delivery 12V 2A+ capable supply) to USB-C port on the console
 
 Burn the bootloaders
 
@@ -88,5 +88,5 @@ In (sudo raspi-config) and retropie/audio, set the audio output to USB AUDIO COD
 
 In the retropie main menu/sound settings (press start button), the audio card should be default and device should be PCM
 
-To turn on the console, press and hold the power button for 5 seconds. The power led will turn on (red) and then switch to the activity led (now solid green). To turn off, press and hold the power button for 5 seconds. This will soft shutdown the OS and then turn off the console.
-If you shutdown the OS via the UI or terminal, you will have to press and hold the power button once the shutdown process has finished to turn off the console.
+To turn on the console, press and hold the power button for 5 seconds. The power led will turn on (red) and then switch to the activity led (now solid green). To turn off, press and hold the power button for 5 seconds. This will soft shutdown the OS and then turn off the console
+If you shutdown the OS via the UI or terminal, you will have to press and hold the power button once the shutdown process has finished to turn off the console
