@@ -16,3 +16,5 @@ SCL EDID connector pin 4 to Arduino SCL A5
 7. Follow Serial Instructions (Press any key and Enter)
 8. If verified successfully, Remove Arduino board USB from PC
 9. Move EDID switch back to normal position (up position on attached PCB)
+
+More Info: https://learn.adafruit.com/adafruit-tfp401-hdmi-slash-dvi-decoder-to-40-pin-ttl-display/editing-the-edid
