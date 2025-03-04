@@ -57,13 +57,13 @@ Use WinSCP or SSH Terminal to:
 
 Make sure /boot/firmware/config.txt is identical to included config.txt file
 
-Place Scripts folder in /home/pi/
-
-Place service files in /etc/systemd/system/
+Copy Scripts folder to /home/pi/
 
 In SSH Terminal:
 
-Enable each service: ex: systemctl enable fan.service
+Copy service file contents for each file to new files of the same names in /etc/systemd/system/ ex: sudo nano /etc/systemd/system/fan.service
+
+Enable each service: ex: sudo systemctl enable fan.service
 
 Run:
 
@@ -71,9 +71,15 @@ sudo apt remove python3-rpi.gpio
 
 sudo apt-get install python3-rpi-lgpio
 
-chmod 777 /var/log/fan.log
+sudo apt get install python3-evdev
 
-chmod 777 /var/log/fan.rpm
+sudo nano /var/log/fan.log (write out empty file)
+
+sudo nano /var/log/fan.rpm (write out empty file)
+
+sudo chmod 777 /var/log/fan.log
+
+sudo chmod 777 /var/log/fan.rpm
 
 To turn on the console, press and hold the power button for 5 seconds. The power led will turn on (red) and then switch to the activity led (now solid green). To turn off, press and hold the power button for 5 seconds. This will soft shutdown the OS and then turn off the console.
 If you shutdown the OS via the UI or terminal, you will have to press and hold the power button once the shutdown process has finished to turn off the console.
