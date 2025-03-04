@@ -1,3 +1,5 @@
+/*Credit: Adafruit: https://learn.adafruit.com/adafruit-tfp401-hdmi-slash-dvi-decoder-to-40-pin-ttl-display/editing-the-edid*/
+
 #include <Wire.h> //I2C library
 
 
