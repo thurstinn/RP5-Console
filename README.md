@@ -71,7 +71,7 @@ sudo apt remove python3-rpi.gpio
 
 sudo apt-get install python3-rpi-lgpio
 
-sudo apt get install python3-evdev
+sudo apt-get install python3-evdev
 
 sudo nano /var/log/fan.log (write out empty file)
 
