@@ -4,7 +4,7 @@
 
 The above image of the boards differs slightly from the included board files and the bodges you see were from minor mistakes on first build. Those have been corrected for this repository.
 
-This project was inspired by StonedEdge's impressive Retro-Lite-CM4 (https://github.com/StonedEdge/Retro-Lite-CM4). I do not use any of their files directly (the exception being their project partner's Ardupad.ino https://github.com/dmcke5/Ardupad), but some of the design choices were influenced by their console.
+This project was inspired by StonedEdge's impressive Retro-Lite-CM4 https://github.com/StonedEdge/Retro-Lite-CM4. I do not use any of their files directly (the exception being their project partner's Ardupad.ino https://github.com/dmcke5/Ardupad), but some of the design choices were influenced by their console.
 
 The process of building this console and setting it up can be complex, expensive, and time consuming. Not for the faint of heart
 
