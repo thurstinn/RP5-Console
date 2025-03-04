@@ -16,7 +16,7 @@ With the back casing removed and the battery disconnected, place console face do
 
 Set manual power switch to on position
 
-ATSAMD21E18A and ATMEGA32U4 ICs need USB bootloaders. ATMEGAs Leonardo bootloader can be acquired and flashed using an Arduino Nano in Arduino IDE. ATSAMD21s Adafruit Trinket M0 bootloader can be flashed using a J-Link EDU mini in Microchip Studio. There are online resources for help with this. You will need to make wire breakouts from the associated connectors for each device
+ATSAMD21E18A and ATMEGA32U4 ICs need USB bootloaders. ATMEGAs Leonardo bootloader can be acquired and flashed using an Arduino Nano in Arduino IDE. ATSAMD21s Adafruit Trinket M0 bootloader can be flashed using a J-Link EDU mini in Microchip Studio. There are online resources for help with this (https://learn.adafruit.com/how-to-program-samd-bootloaders/overview). You will need to make wire breakouts from the associated connectors for each device. The MPN for the mates of each connector are located in the schematics. The MPN of metal contact that needs crimped on the wires for all of those mates is: SSUH-003T-P0.15
 
 Connect the battery
 
