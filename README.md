@@ -10,8 +10,6 @@ The process of building this console and setting it up can be complex, expensive
 
 Assuming you have all the boards assembled and all the parts ready, assembly is pretty straightforward. Use the images as a guide. You will have to extend the speaker wires to reach their connectors. DO NOT GLUE THE BATTERY OR ANYTHING TO THE BACK OF THE SCREEN! I use a large square piece of soft foam double sided taped to the inside of the back cover to compress down on the battery, and by extension the screen, to hold it in place. Tape could also be used. I also chose not to glue or use double sided tape to keep the screen attached to the front cover. I use kapton tape on the outer edges of the screen. Kapton is clean and holds well after compressing it down on a surface. I also used 3mm thick harder foam pieces attched at various points on the back of the main board to softly compress against the back of the screen. This is in an effort to make replacing parts much easier while avoiding damage.
 
-BOM coming soon..
-
 # Setup
 
 Keep battery installed but disconnected until prompted
