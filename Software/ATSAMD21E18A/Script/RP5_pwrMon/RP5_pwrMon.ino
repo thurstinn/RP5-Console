@@ -60,7 +60,7 @@ void setup() {
       SYSCTRL_BOD33_HYST |               // Enable hysteresis (optional)
       SYSCTRL_BOD33_RUNSTDBY |           // Keep BOD running in standby
       SYSCTRL_BOD33_ENABLE |             // Enable BOD
-      SYSCTRL_BOD33_ACTION_RESET;         // Do nothing automatically
+      SYSCTRL_BOD33_ACTION_RESET;        // Reset on brown-out
   
   while (!SYSCTRL->PCLKSR.bit.BOD33RDY);
 
