@@ -42,6 +42,25 @@ void setup() {
   pinMode(batV, INPUT);
   digitalWrite(enPin, LOW);         
   digitalWrite(piPwr, HIGH);
+
+                                                                                                                           while (!SYSCTRL->PCLKSR.bit.BOD33RDY);
+
+  // Disable BOD before reconfiguration
+  SYSCTRL->BOD33.reg = 0;
+  
+  // Wait for sync after disabling
+  while (!SYSCTRL->PCLKSR.bit.BOD33RDY);
+
+  // Configure BOD33
+  SYSCTRL->BOD33.reg =
+      SYSCTRL_BOD33_LEVEL(42) |         // ~2.7V threshold (adjust as needed)
+      SYSCTRL_BOD33_ACTION_RESET |      // Reset MCU on brown-out
+      SYSCTRL_BOD33_HYST |              // Enable hysteresis (optional)
+      SYSCTRL_BOD33_RUNSTDBY |          // Keep BOD running in standby mode
+      SYSCTRL_BOD33_ENABLE;             // Enable BOD
+
+  // Wait for BOD to be ready again
+  while (!SYSCTRL->PCLKSR.bit.BOD33RDY);
   
   Serial.begin(115200);
   while (!Serial);
@@ -53,7 +72,9 @@ void setup() {
   rtc.enableAlarm(rtc.MATCH_SS);
   Serial.println(readBatVoltage());
   delay(1000);
-  Serial.println(readBatVoltage()); 
+  Serial.println(readBatVoltage());
+
+  
 }
 
 //setup adc 
