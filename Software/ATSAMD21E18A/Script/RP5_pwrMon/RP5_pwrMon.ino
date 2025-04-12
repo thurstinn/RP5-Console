@@ -12,14 +12,14 @@
 #include <Arduino.h>
 #include <RTCZero.h>
 
-//define pins
+// Define pins
 #define pwrBtn 1
 #define enPin 0
 #define piPwr 4
 #define piOn 2
 #define batV A3                
 
-//define variables
+// Define variables
 int adcRead;
 float batVoltage;
 bool pwrOn = true;                   
@@ -43,28 +43,28 @@ void setup() {
   digitalWrite(enPin, LOW);         
   digitalWrite(piPwr, HIGH);
 
-                                                                                                                           while (!SYSCTRL->PCLKSR.bit.BOD33RDY);
-
-  // Disable BOD before reconfiguration
-  SYSCTRL->BOD33.reg = 0;
-  
-  // Wait for sync after disabling
-  while (!SYSCTRL->PCLKSR.bit.BOD33RDY);
-
-  // Configure BOD33
-  SYSCTRL->BOD33.reg =
-      SYSCTRL_BOD33_LEVEL(42) |         // ~2.7V threshold (adjust as needed)
-      SYSCTRL_BOD33_ACTION_RESET |      // Reset MCU on brown-out
-      SYSCTRL_BOD33_HYST |              // Enable hysteresis (optional)
-      SYSCTRL_BOD33_RUNSTDBY |          // Keep BOD running in standby mode
-      SYSCTRL_BOD33_ENABLE;             // Enable BOD
-
-  // Wait for BOD to be ready again
-  while (!SYSCTRL->PCLKSR.bit.BOD33RDY);
-  
   Serial.begin(115200);
   while (!Serial);
   
+  // Configure brown-out detection
+  uint8_t resetCause = PM->RCAUSE.reg;
+
+  if (resetCause & (1 << 2)) {
+    Serial.println("Brown-out reset detected.");
+  }
+
+  while (!SYSCTRL->PCLKSR.bit.BOD33RDY);
+
+  SYSCTRL->BOD33.reg =
+      SYSCTRL_BOD33_LEVEL(48) |          // ~2.9V threshold (adjust as needed)
+      SYSCTRL_BOD33_HYST |               // Enable hysteresis (optional)
+      SYSCTRL_BOD33_RUNSTDBY |           // Keep BOD running in standby
+      SYSCTRL_BOD33_ENABLE |             // Enable BOD
+      SYSCTRL_BOD33_ACTION_RESET;         // Do nothing automatically
+  
+  while (!SYSCTRL->PCLKSR.bit.BOD33RDY);
+
+  // Configure RTC
   attachInterrupt(digitalPinToInterrupt(pwrBtn), wakeFromSleep, FALLING); 
   
   rtc.begin();                       
@@ -73,11 +73,9 @@ void setup() {
   Serial.println(readBatVoltage());
   delay(1000);
   Serial.println(readBatVoltage());
-
-  
 }
 
-//setup adc 
+// Setup adc 
 float readBatVoltage() {
   analogReadResolution(12);
   const int numSamples = 20;
@@ -112,9 +110,9 @@ void completeShutdown() {
 }
 
 void powerOnSystem() {
-  digitalWrite(enPin, LOW);          
+  digitalWrite(enPin, LOW);
   pwrOn = true;
-  Serial.println("Powered on");                       
+  Serial.println("Powered on");
 }
 
 void handleButtonPress() {
@@ -164,7 +162,7 @@ void loop() {
     Serial.println("Battery low, powering off");
     initiateShutdown();               
   }
-  // Put microcontroller to sleep after each loop
+  // Put microcontroller to sleep if system off
   if (!pwrOn) {
     enterSleepMode();                   
   }
